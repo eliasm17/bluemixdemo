@@ -15,7 +15,7 @@ def hello():
     except RedisError:
         visits = "<i>cannot connect to Redis, counter disabled</i>"
 
-    html = "<h3>*** Hello World. Python App. Probando Kubernetes + Devops 1.5{name}!</h3>" \
+    html = "<h3>*** Soy una App de Python corriendo en un Container y desplegada en Bluemix Kubernetes V 1.5 {name}!</h3>" \
            "<b>*** Hostname:</b> {hostname}<br/>" \
            "<b>*** Visits:</b> {visits}"
     return html.format(name=os.getenv("NAME", "world"), hostname=socket.gethostname(), visits=visits)
