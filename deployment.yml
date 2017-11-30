@@ -12,7 +12,7 @@ spec:
     spec:
       containers:
       - name: python-app
-        image: registry.ng.bluemix.net/santander/python
+        image: registry.ng.bluemix.net/demospace/python
         # for local development against minikube registry
         #imagePullPolicy: Never        
         ports:
